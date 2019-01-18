@@ -1,0 +1,72 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "0339bcbe176e4c9582ae557ddda46131",
+    "Name": "Bootstrap",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "0dbb9b870a7a44568774fdbbe9da9b90", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "4bfa3600f69146299c856023be3cd70f", "Name": "BGM" },
+        { "$TypeId": 9, "Id": "867a9ff017574eba84820e0158fa7a96", "Name": "Tap" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "0dbb9b870a7a44568774fdbbe9da9b90",
+    "Name": "Camera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            },
+            "depth": -1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4bfa3600f69146299c856023be3cd70f",
+    "Name": "BGM",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
+        "Properties": {
+            "loop": true
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "867a9ff017574eba84820e0158fa7a96",
+    "Name": "Tap",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
+        "Properties": {
+            "clip": { "$TypeId": 10, "Guid": "0e24e5de4d51b49e3bea7b5270916045", "FileId": 8300000, "Type": 3 }
+        }
+    }]
+}]
