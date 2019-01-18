@@ -6,6 +6,7 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "0dbb9b870a7a44568774fdbbe9da9b90", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "30c515ab81fc4b12987bde646717cd22", "Name": "Sounds" },
         { "$TypeId": 9, "Id": "4bfa3600f69146299c856023be3cd70f", "Name": "BGM" },
         { "$TypeId": 9, "Id": "867a9ff017574eba84820e0158fa7a96", "Name": "Tap" }
     ]
@@ -44,6 +45,17 @@
 },
 {
     "$TypeId": 5,
+    "Id": "30c515ab81fc4b12987bde646717cd22",
+    "Name": "Sounds",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }]
+},
+{
+    "$TypeId": 5,
     "Id": "4bfa3600f69146299c856023be3cd70f",
     "Name": "BGM",
     "Enabled": true,
@@ -53,6 +65,11 @@
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
             "loop": true
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "30c515ab81fc4b12987bde646717cd22", "Name": "Sounds" }
         }
     }]
 },
@@ -67,6 +84,11 @@
         "Type": { "Id": "a60aa1b9ad84a83eefb0d5382a4d5967", "Name": "AudioSource" },
         "Properties": {
             "clip": { "$TypeId": 10, "Guid": "0e24e5de4d51b49e3bea7b5270916045", "FileId": 8300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "30c515ab81fc4b12987bde646717cd22", "Name": "Sounds" }
         }
     }]
 }]

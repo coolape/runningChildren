@@ -1,0 +1,43 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "28ae2459f0b34841a2a45b1fda828a55",
+    "Name": "EnumGameState",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Enum",
+    "BaseType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+    "Fields": [{
+        "Id": "cabfc56018eb46869d22588b833e5002",
+        "Name": "menu",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "77b5022f1db8426f89cd913ecf84e842",
+        "Name": "play",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "a3b50d98124145d4a2f4c5f976477cc0",
+        "Name": "gameOver",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "1f3e102a74a64c9195999f794de8e155",
+        "Name": "pause",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "28ae2459f0b34841a2a45b1fda828a55", "Name": "EnumGameState" },
+        "Properties": {
+            "play": 1,
+            "gameOver": 2,
+            "pause": 3
+        }
+    }
+}]

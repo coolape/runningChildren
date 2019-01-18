@@ -1,0 +1,19 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "d4bc785a25494394a6f13b6958b457b6",
+    "Name": "CfgGame",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Configuration",
+    "Fields": [{
+        "Id": "ba481826a6d1485aaf9b32a891d75b71",
+        "Name": "gameState",
+        "FieldType": { "Id": "28ae2459f0b34841a2a45b1fda828a55", "Name": "EnumGameState" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "d4bc785a25494394a6f13b6958b457b6", "Name": "CfgGame" }
+    }
+}]
