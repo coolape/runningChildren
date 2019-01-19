@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "a97838e745c4470ca5fbf36c5ba9cefb",
+    "Name": "CfgUser",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Configuration",
+    "DefaultValue": {
+        "Type": { "Id": "a97838e745c4470ca5fbf36c5ba9cefb", "Name": "CfgUser" }
+    }
+}]

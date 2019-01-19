@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "3dec3d7bb01e47e8a347c6815f727e57",
+    "Name": "CfgPlayer",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Configuration",
+    "DefaultValue": {
+        "Type": { "Id": "3dec3d7bb01e47e8a347c6815f727e57", "Name": "CfgPlayer" }
+    }
+}]

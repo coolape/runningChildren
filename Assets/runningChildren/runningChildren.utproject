@@ -82,5 +82,9 @@
         "Type": { "Id": "e816e7b93a13b9e5ddf993486ca79278", "Name": "AudioConfig" }
     }, {
         "Type": { "Id": "d4bc785a25494394a6f13b6958b457b6", "Name": "CfgGame" }
+    }, {
+        "Type": { "Id": "a97838e745c4470ca5fbf36c5ba9cefb", "Name": "CfgUser" }
+    }, {
+        "Type": { "Id": "3dec3d7bb01e47e8a347c6815f727e57", "Name": "CfgPlayer" }
     }]
 }]

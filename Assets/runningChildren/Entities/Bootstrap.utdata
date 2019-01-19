@@ -8,7 +8,9 @@
         { "$TypeId": 9, "Id": "0dbb9b870a7a44568774fdbbe9da9b90", "Name": "Camera" },
         { "$TypeId": 9, "Id": "30c515ab81fc4b12987bde646717cd22", "Name": "Sounds" },
         { "$TypeId": 9, "Id": "4bfa3600f69146299c856023be3cd70f", "Name": "BGM" },
-        { "$TypeId": 9, "Id": "867a9ff017574eba84820e0158fa7a96", "Name": "Tap" }
+        { "$TypeId": 9, "Id": "867a9ff017574eba84820e0158fa7a96", "Name": "Tap" },
+        { "$TypeId": 9, "Id": "c0536e2e5c1b4b548472c112547ff5f2", "Name": "Entity" },
+        { "$TypeId": 9, "Id": "699ba4194a934b6ea2695b04a0a264e2", "Name": "Sprite" }
     ]
 },
 {
@@ -39,7 +41,8 @@
                 "Name": "SolidColor",
                 "Value": 1
             },
-            "depth": -1
+            "depth": -1,
+            "layerMask": 791
         }
     }]
 },
@@ -90,5 +93,40 @@
         "Properties": {
             "parent": { "$TypeId": 9, "Id": "30c515ab81fc4b12987bde646717cd22", "Name": "Sounds" }
         }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "c0536e2e5c1b4b548472c112547ff5f2",
+    "Name": "Entity",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0
+},
+{
+    "$TypeId": 5,
+    "Id": "699ba4194a934b6ea2695b04a0a264e2",
+    "Name": "Sprite",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 4.22
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" }
     }]
 }]
