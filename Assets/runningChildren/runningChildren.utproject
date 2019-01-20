@@ -61,7 +61,10 @@
         { "Id": "251df5ef6819533f94e1cbf3181f722e", "Name": "UTiny.Audio" },
         { "Id": "e46c24fb4d9a01e79b109bbcf6d24260", "Name": "UTiny.UILayout" },
         { "Id": "f671a72a11d2482495290c950a96e8a4", "Name": "Main" },
-        { "Id": "8c6be6e8b11c20a446e356fb3e17ffb1", "Name": "UTiny.Tilemap2D" }
+        { "Id": "8c6be6e8b11c20a446e356fb3e17ffb1", "Name": "UTiny.Tilemap2D" },
+        { "Id": "60feebda86c36292119505b0bd2ac3e9", "Name": "UTiny.UIControls" },
+        { "Id": "259902b84b3ed0f7213a1b5e37040709", "Name": "UTiny.Physics2D" },
+        { "Id": "0b0e260844fa6632977aa15579b42291", "Name": "UTiny.Text" }
     ],
     "StartupEntityGroup": { "Id": "0339bcbe176e4c9582ae557ddda46131", "Name": "NewEntityGroup" }
 },
@@ -87,5 +90,7 @@
         "Type": { "Id": "a97838e745c4470ca5fbf36c5ba9cefb", "Name": "CfgUser" }
     }, {
         "Type": { "Id": "3dec3d7bb01e47e8a347c6815f727e57", "Name": "CfgPlayer" }
+    }, {
+        "Type": { "Id": "38283a6cef9faa790b5c9936163d59e3", "Name": "Physics2DConfig" }
     }]
 }]

@@ -6,6 +6,13 @@
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Component",
+    "Fields": [{
+        "Id": "1a1bb05c47bf4c8f82464b0bc3b357ea",
+        "Name": "btnSound",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0
+    }],
     "DefaultValue": {
         "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "UIComMenu" }
     }

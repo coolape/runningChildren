@@ -36,7 +36,7 @@ namespace game {
 
         static loadSceneMenu(world:ut.World)
         {
-            console.log("loadSceneMenu");
+            ut.EntityGroup.instantiate(world, "game.UIPanelMenu");
             let url = "http://localhost:8080/icon.png"
             let cb = function(code, respons, orgs) {
                 console.log("code=====" + code);
