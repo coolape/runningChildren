@@ -10,7 +10,7 @@ namespace game {
             switch(cfg.gameState)
             {
                 case game.EnumGameState.init:
-                    
+                    game.GameManager.chgState(this.world, game.EnumGameState.menu);
                     break;
             }
         }

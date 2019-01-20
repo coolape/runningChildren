@@ -60,7 +60,8 @@
         { "Id": "ce3f1bd7050540b70d450a606e226ea2", "Name": "UTiny.Shared" },
         { "Id": "251df5ef6819533f94e1cbf3181f722e", "Name": "UTiny.Audio" },
         { "Id": "e46c24fb4d9a01e79b109bbcf6d24260", "Name": "UTiny.UILayout" },
-        { "Id": "f671a72a11d2482495290c950a96e8a4", "Name": "Main" }
+        { "Id": "f671a72a11d2482495290c950a96e8a4", "Name": "Main" },
+        { "Id": "8c6be6e8b11c20a446e356fb3e17ffb1", "Name": "UTiny.Tilemap2D" }
     ],
     "StartupEntityGroup": { "Id": "0339bcbe176e4c9582ae557ddda46131", "Name": "NewEntityGroup" }
 },

@@ -6,6 +6,13 @@
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Configuration",
+    "Fields": [{
+        "Id": "4d20694660834ab696c85091799e55d8",
+        "Name": "id",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }],
     "DefaultValue": {
         "Type": { "Id": "a97838e745c4470ca5fbf36c5ba9cefb", "Name": "CfgUser" }
     }

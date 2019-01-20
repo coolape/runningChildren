@@ -6,6 +6,43 @@
     "Unlisted": false,
     "Visibility": 0,
     "TypeCode": "Configuration",
+    "Fields": [{
+        "Id": "f1792d03ddf64368a57b81c1e1fe71ce",
+        "Name": "id",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "e27d3167106a4b4ba888e571c0ddf0e6",
+        "Name": "name",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "86c53040054c4ac7baaf93d877aa9243",
+        "Name": "headIcon",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "ee80c1d634664bb39b836fb38fa655c8",
+        "Name": "sex",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "2e174fb0d28940428af9fd1606fdaed3",
+        "Name": "gold",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "b54d9a3b073341928f5d0c4722264c5b",
+        "Name": "bestDistance",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0
+    }],
     "DefaultValue": {
         "Type": { "Id": "3dec3d7bb01e47e8a347c6815f727e57", "Name": "CfgPlayer" }
     }

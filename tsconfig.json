@@ -2,7 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "outFile": "/Users/chenbin/Documents/working/projects/runningChildren/TinyExport/runningChildren/html5/development/ScriptAssemblies/tsc-emit.js",
+        "outFile": "/Users/chenbin/Documents/working/u3dProjects/runningChildren/TinyExport/runningChildren/html5/development/ScriptAssemblies/tsc-emit.js",
         "sourceMap": true,
         "target": "ES5"
     },
@@ -25,7 +25,8 @@
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Sprite2D/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.EditorExtensions/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Audio/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.UILayout/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.UILayout/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Tilemap2D/**/*.ts"
     ],
     "exclude": [],
     "files": [

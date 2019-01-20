@@ -6,7 +6,7 @@ namespace game {
      * 发送表单
      * @param jsonData 
      */
-    public PostFormData(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
+    public static PostFormData(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
         //数据格式化
         var data = new FormData();
         for(var attr in jsonData) {
@@ -24,18 +24,18 @@ namespace game {
      * @param onFailCallback 
      * @param async 
      */
-    public PostJson(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
+    public static PostJson(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
         this.Send(url,"Post",JSON.stringify(jsonData),true,callback,async);
     }
  
-    public Get(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
+    public static Get(url:string,jsonData:any,callback:ComCallback,async:boolean=true){
         for(var attr in jsonData) {
             url = this.urlParam(url,attr,jsonData[attr]);
         }
         this.Send(url,"Get",null,false,callback,async);
     }
  
-    private Send(url:string,method:string,data:any,isJsonData:boolean,callback:ComCallback,async:boolean){
+    private static Send(url:string,method:string,data:any,isJsonData:boolean,callback:ComCallback,async:boolean){
         //创建请求
         var xhr = new XMLHttpRequest();
  
@@ -68,7 +68,7 @@ namespace game {
  
         //建立连接并发送数据
         xhr.open(method,url, async);
- 
+
         //Json数据添加头
         if (isJsonData){
             xhr.setRequestHeader("Content-Type", "application/json;charset=utf-8");
@@ -83,7 +83,7 @@ namespace game {
      * @param name 参数名
      * @param value 参数值
      */
-    private urlParam(url, name, value) {
+    private static urlParam(url, name, value) {
         url += (url.indexOf('?') == -1 ) ? '?' : '&' ; 
         url += encodeURIComponent(name) + "=" + encodeURIComponent(value);
         return url;

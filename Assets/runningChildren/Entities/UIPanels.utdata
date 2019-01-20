@@ -1,7 +1,7 @@
 ﻿[{
     "$TypeId": 4,
     "Id": "2ef06a22101c4c719cf55565caef4f82",
-    "Name": "UIPanels",
+    "Name": "UIPanelMain",
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
@@ -54,7 +54,7 @@
     "Name": "CanvasCamera",
     "Enabled": true,
     "Static": false,
-    "Layer": 5,
+    "Layer": 0,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {

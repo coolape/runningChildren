@@ -1,0 +1,12 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "6aa9907a04e947509553bfe13d266697",
+    "Name": "UIComMenu",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "DefaultValue": {
+        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "UIComMenu" }
+    }
+}]

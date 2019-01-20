@@ -12,6 +12,12 @@
         "FieldType": { "Id": "28ae2459f0b34841a2a45b1fda828a55", "Name": "EnumGameState" },
         "Array": false,
         "Visibility": 0
+    }, {
+        "Id": "1a512f2c7d704b95adf496a5a506885e",
+        "Name": "speed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
     }],
     "DefaultValue": {
         "Type": { "Id": "d4bc785a25494394a6f13b6958b457b6", "Name": "CfgGame" }
