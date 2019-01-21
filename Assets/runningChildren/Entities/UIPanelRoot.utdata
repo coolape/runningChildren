@@ -5,7 +5,7 @@
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
-        { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "Canvas" },
+        { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "CanvasPanels" },
         { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" },
         { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" },
         { "$TypeId": 9, "Id": "7526fb020df843df9f268eab9cb1001d", "Name": "Label" },
@@ -15,7 +15,7 @@
 {
     "$TypeId": 5,
     "Id": "7ed703d22367457ea2e72c7943981a24",
-    "Name": "Canvas",
+    "Name": "CanvasPanels",
     "Enabled": true,
     "Static": false,
     "Layer": 5,

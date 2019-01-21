@@ -58,6 +58,8 @@
         "Properties": {
             "imageFile": "http://localhost:8080/icon.png"
         }
+    }, {
+        "Type": { "Id": "b7ca7d4f902bd4ffad3750c88ad2b1a1", "Name": "Image2DRenderToTexture" }
     }]
 },
 {

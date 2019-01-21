@@ -4,43 +4,43 @@ namespace game {
     /** New System */
     export class UIPanelManager {
 
-        static panelMap:{[key:string] : ut.Entity} = {};
+        //static panelMap:{[key:string] : ut.Entity} = {};
         static init(world:ut.World) {
             let cfg = world.getConfigData(game.CfgUI);
+            let cfgPanels= world.getConfigData(game.CfgUIPanels);
             if (!cfg.inited) {
-                console.log("0000000000000000000000");
                 ut.EntityGroup.instantiate(world, "game.UIPanelRoot");
                 world.forEach([ut.Entity, game.CPUIPanelBase],
                 (entity, panel)=>
                 {
-                    console.log("=======");
-                    this.panelMap[world.getEntityName(entity)] = entity;
-                    let _entity = this.panelMap[world.getEntityName(entity)]
-                    console.log("111111 init==" + world.getEntityName(_entity));
+                    cfgPanels.panels.push(entity);
                     if (!world.hasComponent(entity, ut.Disabled)) {
                         //world.addComponent(entity, ut.Disabled);
                     }
                 });
                 cfg.inited = true;
+                world.setConfigData(cfgPanels);
             }
         }
         static getPanel(world:ut.World, panelName:string):ut.Entity {
             this.init(world);
-                console.log("1111111111111111==" + panelName);
-            let panel = this.panelMap[panelName];
-            if (panel == null) {
-                console.log("22222222222222==" + panelName);
-                panel = world.getEntityByName(panelName);
-                this.panelMap[panelName] = panel;
-            }
-            console.log("3333333==" + world.getEntityName(panel));
-            return panel;
+            let cfgPanels= world.getConfigData(game.CfgUIPanels);
+            cfgPanels.panels.forEach((v,i)=>
+            {
+                console.log("getpnael====" + i);
+                console.log(v);
+                if (!v.isNone() && world.getEntityName(v) == panelName) {
+                    return v;
+                }
+            });
+            return null;
         }
 
         static showPanel(world:ut.World, panelName:string)
         {
                 console.log("0000000==" + panelName);
-            let panel = this.getPanel(world, panelName);
+            //let panel = this.getPanel(world, panelName);
+            let panel = world.getEntityByName(panelName);
                 console.log("555555==" + panelName);
             if (panel != null) {
                 console.log("666666=-----=" + world.getEntityName(panel));
