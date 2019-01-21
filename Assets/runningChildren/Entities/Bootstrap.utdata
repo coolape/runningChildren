@@ -53,6 +53,11 @@
     "Layer": 0,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "28542cedaf766a0fefbfb558a6c3a717", "Name": "Image2DLoadFromFile" },
+        "Properties": {
+            "imageFile": "http://localhost:8080/icon.png"
+        }
     }]
 },
 {

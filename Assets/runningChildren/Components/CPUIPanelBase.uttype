@@ -1,0 +1,19 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "437ee397d553469c83b2f32b53c2b45b",
+    "Name": "CPUIPanelBase",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "1c3cb15762bb45658c6c07340558d3eb",
+        "Name": "entity",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "437ee397d553469c83b2f32b53c2b45b", "Name": "CPUIPanelBase" }
+    }
+}]

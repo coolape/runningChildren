@@ -92,5 +92,7 @@
         "Type": { "Id": "3dec3d7bb01e47e8a347c6815f727e57", "Name": "CfgPlayer" }
     }, {
         "Type": { "Id": "38283a6cef9faa790b5c9936163d59e3", "Name": "Physics2DConfig" }
+    }, {
+        "Type": { "Id": "c9c6793135ab40ce9b459d749ad3a6dc", "Name": "CfgUI" }
     }]
 }]

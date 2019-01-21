@@ -1,14 +1,15 @@
 ﻿[{
     "$TypeId": 4,
     "Id": "2ef06a22101c4c719cf55565caef4f82",
-    "Name": "UIPanelMenu",
+    "Name": "UIPanelRoot",
     "ExportFlags": 0,
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "Canvas" },
+        { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" },
         { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" },
-        { "$TypeId": 9, "Id": "2063da44434a4c2c9fe52c98e250857e", "Name": "CanvasCamera" },
-        { "$TypeId": 9, "Id": "7526fb020df843df9f268eab9cb1001d", "Name": "Label" }
+        { "$TypeId": 9, "Id": "7526fb020df843df9f268eab9cb1001d", "Name": "Label" },
+        { "$TypeId": 9, "Id": "2063da44434a4c2c9fe52c98e250857e", "Name": "CanvasCamera" }
     ]
 },
 {
@@ -52,6 +53,56 @@
 },
 {
     "$TypeId": 5,
+    "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7",
+    "Name": "PanelMenu",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 5,
+    "Components": [{
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "Canvas" }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" }
+    }, {
+        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
+    }, {
+        "Type": { "Id": "437ee397d553469c83b2f32b53c2b45b", "Name": "CPUIPanelBase" },
+        "Properties": {
+            "entity": { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" }
+        }
+    }, {
+        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "UIComMenu" },
+        "Properties": {
+            "btnSound": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
     "Id": "a361aab85950488baac107e8c2b8d65d",
     "Name": "ButtonSound",
     "Enabled": true,
@@ -63,7 +114,7 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 639.3877,
+                    "x": 862.9575,
                     "y": -490,
                     "z": -10800
                 }
@@ -84,7 +135,7 @@
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
-            "parent": { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "Canvas" }
+            "parent": { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" }
         }
     }, {
         "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
@@ -147,29 +198,6 @@
         }
     }, {
         "Type": { "Id": "0efd2ae60c7796b3a911cb3247c89bd9", "Name": "MouseInteraction" }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "2063da44434a4c2c9fe52c98e250857e",
-    "Name": "CanvasCamera",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }, {
-        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
-    }, {
-        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
-    }, {
-        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
-    }, {
-        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
-        "Properties": {
-            "depth": 1,
-            "layerMask": 32
-        }
     }]
 },
 {
@@ -244,6 +272,29 @@
                 "Name": "Monospace",
                 "Value": 2
             }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "2063da44434a4c2c9fe52c98e250857e",
+    "Name": "CanvasCamera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "depth": 1,
+            "layerMask": 32
         }
     }]
 }]
