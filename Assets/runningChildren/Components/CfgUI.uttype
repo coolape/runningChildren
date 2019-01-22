@@ -8,14 +8,14 @@
     "TypeCode": "Configuration",
     "Fields": [{
         "Id": "ef2dd4adac374281ae425e17e4149548",
-        "Name": "currSortLayer",
+        "Name": "currOrder",
         "FieldType": { "Id": "2aa56ce081e14e8a93d276da72d813bc", "Name": "Int16" },
         "Array": false,
         "Visibility": 0
     }, {
         "Id": "95070d5fd02c4976859ba8cae0b75eee",
-        "Name": "topPanel",
-        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Name": "topPanelName",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
         "Array": false,
         "Visibility": 0
     }, {
@@ -23,6 +23,12 @@
         "Name": "inited",
         "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
         "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "cae9ca4482724ce29d374a9f1e265436",
+        "Name": "activePanels",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": true,
         "Visibility": 0
     }],
     "DefaultValue": {

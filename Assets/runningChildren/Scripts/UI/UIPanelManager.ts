@@ -7,21 +7,24 @@ namespace game {
         //static panelMap:{[key:string] : ut.Entity} = {};
         static init(world:ut.World) {
             let cfg = world.getConfigData(game.CfgUI);
-            let cfgPanels= world.getConfigData(game.CfgUIPanels);
+            //let cfgPanels= world.getConfigData(game.CfgUIPanels);
             if (!cfg.inited) {
                 ut.EntityGroup.instantiate(world, "game.UIPanelRoot");
                 world.forEach([ut.Entity, game.CPUIPanelBase],
                 (entity, panel)=>
                 {
-                    cfgPanels.panels.push(entity);
+                    //cfgPanels.panels.push(entity);
                     if (!world.hasComponent(entity, ut.Disabled)) {
                         //world.addComponent(entity, ut.Disabled);
                     }
                 });
                 cfg.inited = true;
-                world.setConfigData(cfgPanels);
+                world.setConfigData(cfg);
+                //world.setConfigData(cfgPanels);
             }
         }
+
+        /*
         static getPanel(world:ut.World, panelName:string):ut.Entity {
             this.init(world);
             let cfgPanels= world.getConfigData(game.CfgUIPanels);
@@ -35,32 +38,88 @@ namespace game {
             });
             return null;
         }
+        */
+
+        static showTopPanel(world:ut.World, panelName:string)
+        {
+            this.init(world);
+            let cfg = world.getConfigData(game.CfgUI);
+            if (cfg.topPanelName == panelName) {
+                return;
+            }
+            world.forEach([ut.Entity, game.CPUIPanelBase],
+            (entity, panel)=>
+            {
+                if (world.getEntityName(entity) == panelName) {
+                    let sg = world.getOrAddComponentData(entity, ut.Core2D.LayerSorting);
+                    sg.order = cfg.currOrder + 1;
+                    cfg.topPanelName = panelName;
+                    cfg.activePanels.push(panelName);
+                    if (world.hasComponent(entity, ut.Disabled)) {
+                        world.removeComponent(entity, ut.Disabled);
+                    }
+                    world.setConfigData(cfg);
+                    return;
+                }
+            });
+        }
+
+        static hideTopPanel(world:ut.World)
+        {
+            this.init(world);
+            let cfg = world.getConfigData(game.CfgUI);
+            if(cfg.topPanelName== null || cfg.topPanelName == "")
+            {
+                return;
+            }
+            world.forEach([ut.Entity, game.CPUIPanelBase],
+            (entity, panel)=>
+            {
+                if (world.getEntityName(entity) == cfg.topPanelName) {
+                    if (!world.hasComponent(entity, ut.Disabled)) {
+                        world.addComponent(entity, ut.Disabled);
+                    }
+
+                    cfg.activePanels.pop();
+                    if (cfg.activePanels.length > 0) {
+                        cfg.topPanelName = cfg.activePanels[cfg.activePanels.length - 1];
+                    }
+                    cfg.currOrder = cfg.currOrder - 1;
+                    world.setConfigData(cfg);
+                    return;
+                }
+            });
+        }
 
         static showPanel(world:ut.World, panelName:string)
         {
-                console.log("0000000==" + panelName);
-            //let panel = this.getPanel(world, panelName);
-            let panel = world.getEntityByName(panelName);
-                console.log("555555==" + panelName);
-            if (panel != null) {
-                console.log("666666=-----=" + world.getEntityName(panel));
-                if (world.hasComponent(panel, ut.Disabled)) {
-                    console.log("77777==" + panelName);
-                    world.removeComponent(panel, ut.Disabled);
-                    console.log("888888==" + panelName);
+            this.init(world);
+            world.forEach([ut.Entity, game.CPUIPanelBase],
+            (entity, panel)=>
+            {
+                if (world.getEntityName(entity) == panelName) {
+
+                    if (world.hasComponent(entity, ut.Disabled)) {
+                        world.removeComponent(entity, ut.Disabled);
+                    }
+                    return;
                 }
-            }
+            });
         }
 
         static hidePanel(world:ut.World, panelName:string)
         {
             this.init(world);
-            let panel = this.getPanel(world,panelName);
-            if (panel != null) {
-                if (!world.hasComponent(panel, ut.Disabled)) {
-                    world.addComponent(panel, ut.Disabled);
+            world.forEach([ut.Entity, game.CPUIPanelBase],
+            (entity, panel)=>
+            {
+                if (world.getEntityName(entity) == panelName) {
+                    if (!world.hasComponent(entity, ut.Disabled)) {
+                        world.addComponent(entity, ut.Disabled);
+                    }
+                    return;
                 }
-            }
+            });
         }
     }
 }

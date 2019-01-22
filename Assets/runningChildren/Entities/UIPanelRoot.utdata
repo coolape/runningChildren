@@ -86,8 +86,6 @@
             "parent": { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "Canvas" }
         }
     }, {
-        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" }
-    }, {
         "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" }
     }, {
         "Type": { "Id": "437ee397d553469c83b2f32b53c2b45b", "Name": "CPUIPanelBase" },
@@ -99,6 +97,10 @@
         "Properties": {
             "btnSound": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" }
         }
+    }, {
+        "Type": { "Id": "288a861a8ca311346faecf4c20a2da76", "Name": "SortingGroup" }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" }
     }]
 },
 {

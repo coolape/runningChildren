@@ -6,7 +6,8 @@ namespace game {
         position?: ut.Core2D.TransformLocalPosition;
         rotation?: ut.Core2D.TransformLocalRotation;
         scale?: ut.Core2D.TransformLocalScale;
-        panel:game.CPUIPanelBase;
+        entity:ut.Entity;
+        panel:game.CPUIPMenu;
     }
 
     export class PMenuBehaviour extends ut.ComponentBehaviour {
@@ -17,14 +18,21 @@ namespace game {
         
         // this method is called for each entity matching the PMenuBehaviourFilter signature, once when enabled
         OnEntityEnable():void { 
-            console.log("==========OnEntityEnable" + this.world.getEntityName(this.data.panel.entity));
+            console.log("==========OnEntityEnable==" + this.world.getEntityName(this.data.entity));
         }
         
         // this method is called for each entity matching the PMenuBehaviourFilter signature, every frame it's enabled
-        //OnEntityUpdate():void { }
+        OnEntityUpdate():void { 
+            if (this.world.getComponentData(this.data.panel.btnSound, ut.UIControls.MouseInteraction).clicked) {
+                console.log("OnEntityUpdate onclick button");
+                UIPanelManager.hideTopPanel(this.world);
+            }
+        }
 
         // this method is called for each entity matching the PMenuBehaviourFilter signature, once when disabled
-        //OnEntityDisable():void { }
+        OnEntityDisable():void { 
+            console.log("==========OnEntityDisable＝＝" + this.world.getEntityName(this.data.entity));
+        }
 
     }
 }

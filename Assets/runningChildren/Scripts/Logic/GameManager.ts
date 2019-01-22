@@ -36,7 +36,7 @@ namespace game {
 
         static loadSceneMenu(world:ut.World)
         {
-            game.UIPanelManager.showPanel(world, "PanelMenu");
+            game.UIPanelManager.showTopPanel(world, "PanelMenu");
             let url = "http://localhost:8080/icon.png"
             let cb = function(code, respons, orgs) {
                 console.log("code=====" + code);
