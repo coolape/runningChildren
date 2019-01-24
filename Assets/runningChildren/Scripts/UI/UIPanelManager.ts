@@ -55,8 +55,10 @@ namespace game {
                     sg.order = cfg.currOrder + 1;
                     cfg.topPanelName = panelName;
                     cfg.activePanels.push(panelName);
-                    if (world.hasComponent(entity, ut.Disabled)) {
-                        world.removeComponent(entity, ut.Disabled);
+                    if (world.hasComponent(entity, game.CPShowHideEntity)) {
+                        let cp = world.getComponentData(entity, game.CPShowHideEntity);
+                        cp.hide = false;
+                        world.setComponentData(entity, cp);
                     }
                     world.setConfigData(cfg);
                     return;
@@ -76,9 +78,9 @@ namespace game {
             (entity, panel)=>
             {
                 if (world.getEntityName(entity) == cfg.topPanelName) {
-                    if (!world.hasComponent(entity, ut.Disabled)) {
-                        world.addComponent(entity, ut.Disabled);
-                    }
+                    let cp = world.getOrAddComponentData(entity, game.CPShowHideEntity);
+                    cp.hide = true;
+                    world.setComponentData(entity, cp);
 
                     cfg.activePanels.pop();
                     if (cfg.activePanels.length > 0) {
