@@ -15,6 +15,15 @@
         "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
         "Array": false,
         "Visibility": 0
+    }, {
+        "Id": "c78a9ae636474b669206993d1c248893",
+        "Name": "entities",
+        "Documentation": {
+            "Summary": "要显示和隐藏的entity对象"
+        },
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": true,
+        "Visibility": 0
     }],
     "DefaultValue": {
         "Type": { "Id": "add43523aaf24513bfad682e1997e315", "Name": "CPShowHideEntity" }

@@ -32,6 +32,9 @@
         "Visibility": 0
     }],
     "DefaultValue": {
-        "Type": { "Id": "c9c6793135ab40ce9b459d749ad3a6dc", "Name": "CfgUI" }
+        "Type": { "Id": "c9c6793135ab40ce9b459d749ad3a6dc", "Name": "CfgUI" },
+        "Properties": {
+            "currOrder": 10
+        }
     }
 }]
