@@ -6,6 +6,8 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "CanvasPanels" },
+        { "$TypeId": 9, "Id": "a18fd035f014424c80ec01f3e7a8724c", "Name": "ButtonShow" },
+        { "$TypeId": 9, "Id": "4bc6f7ec54e44f999cf60ec6c6577295", "Name": "Label" },
         { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" },
         { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" },
         { "$TypeId": 9, "Id": "7526fb020df843df9f268eab9cb1001d", "Name": "Label" },
@@ -53,6 +55,174 @@
 },
 {
     "$TypeId": 5,
+    "Id": "a18fd035f014424c80ec01f3e7a8724c",
+    "Name": "ButtonShow",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 5,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "7ed703d22367457ea2e72c7943981a24", "Name": "CanvasPanels" }
+        }
+    }, {
+        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" },
+        "Properties": {
+            "anchorMin": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            },
+            "anchorMax": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            },
+            "sizeDelta": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 100,
+                    "y": 100
+                }
+            },
+            "anchoredPosition": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -10800
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "f5f33801a546a4321aa16a919f8f6bc2", "FileId": 21300030, "Type": 3 },
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 100,
+                    "y": 100
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "0efd2ae60c7796b3a911cb3247c89bd9", "Name": "MouseInteraction" }
+    }, {
+        "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
+        "Properties": {
+            "sprite2DRenderer": { "$TypeId": 9, "Id": "a18fd035f014424c80ec01f3e7a8724c", "Name": "ButtonSound" }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4bc6f7ec54e44f999cf60ec6c6577295",
+    "Name": "Label",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 5,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "a18fd035f014424c80ec01f3e7a8724c", "Name": "ButtonSound" }
+        }
+    }, {
+        "Type": { "Id": "5ddde0b906f5f2c3b13d17f455d6ef5e", "Name": "RectTransform" },
+        "Properties": {
+            "anchoredPosition": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "y": -0.000579834
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": -0.000579834
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Properties": {
+            "style": { "$TypeId": 9, "Id": "4bc6f7ec54e44f999cf60ec6c6577295", "Name": "Label" },
+            "text": "swtich",
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
+        "Properties": {
+            "size": 20
+        }
+    }, {
+        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
+        "Properties": {
+            "font": { "$TypeId": 9, "Id": "4bc6f7ec54e44f999cf60ec6c6577295", "Name": "Label" },
+            "italic": false
+        }
+    }, {
+        "Type": { "Id": "00d6bc791188d69186aa19bf8f6652a8", "Name": "RectTransformFinalSize" }
+    }, {
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }]
+},
+{
+    "$TypeId": 5,
     "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7",
     "Name": "PanelMenu",
     "Enabled": true,
@@ -95,9 +265,10 @@
             "entity": { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" }
         }
     }, {
-        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "UIComMenu" },
+        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "CPUIPMenu" },
         "Properties": {
-            "btnSound": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" }
+            "btnSound": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" },
+            "btnShow": { "$TypeId": 9, "Id": "a18fd035f014424c80ec01f3e7a8724c", "Name": "ButtonSound" }
         }
     }]
 },
@@ -136,11 +307,6 @@
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
         "Properties": {
             "parent": { "$TypeId": 9, "Id": "609ed9b7a2544f15b5f41f5fc4ada9f7", "Name": "PanelMenu" }
-        }
-    }, {
-        "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
-        "Properties": {
-            "sprite2DRenderer": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" }
         }
     }, {
         "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
@@ -199,6 +365,11 @@
         }
     }, {
         "Type": { "Id": "0efd2ae60c7796b3a911cb3247c89bd9", "Name": "MouseInteraction" }
+    }, {
+        "Type": { "Id": "95ff57ed0598446933927bc634433a47", "Name": "Button" },
+        "Properties": {
+            "sprite2DRenderer": { "$TypeId": 9, "Id": "a361aab85950488baac107e8c2b8d65d", "Name": "ButtonSound" }
+        }
     }]
 },
 {
@@ -264,16 +435,7 @@
     }, {
         "Type": { "Id": "00d6bc791188d69186aa19bf8f6652a8", "Name": "RectTransformFinalSize" }
     }, {
-        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" },
-        "Properties": {
-            "name": {
-                "$TypeId": 8,
-                "Type": { "Id": "8482cf27d187bfe09e2f868508c4456f", "Name": "FontName" },
-                "Id": "a0b12353bac7eb056d566e5d19498077",
-                "Name": "SansSerif",
-                "Value": 0
-            }
-        }
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
     }]
 },
 {

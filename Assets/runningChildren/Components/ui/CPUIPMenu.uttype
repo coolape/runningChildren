@@ -1,7 +1,7 @@
 ﻿[{
     "$TypeId": 3,
     "Id": "6aa9907a04e947509553bfe13d266697",
-    "Name": "UIComMenu",
+    "Name": "CPUIPMenu",
     "ExportFlags": 0,
     "Unlisted": false,
     "Visibility": 0,
@@ -12,8 +12,14 @@
         "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
         "Array": false,
         "Visibility": 0
+    }, {
+        "Id": "fecfe1d09e424f1694afdf5789e68f5b",
+        "Name": "btnShow",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0
     }],
     "DefaultValue": {
-        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "UIComMenu" }
+        "Type": { "Id": "6aa9907a04e947509553bfe13d266697", "Name": "CPUIPMenu" }
     }
 }]
