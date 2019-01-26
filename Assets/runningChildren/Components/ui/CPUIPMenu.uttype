@@ -14,7 +14,13 @@
         "Visibility": 0
     }, {
         "Id": "fecfe1d09e424f1694afdf5789e68f5b",
-        "Name": "btnShow",
+        "Name": "headIcon",
+        "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "a813a891abe74008b4a4a4254b5b1e61",
+        "Name": "labelName",
         "FieldType": { "Id": "5a182d9d039d4dfd8fa96132d05f9ee7", "Name": "EntityReference" },
         "Array": false,
         "Visibility": 0

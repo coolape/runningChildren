@@ -26,13 +26,12 @@ namespace game {
             if (this.world.getComponentData(this.data.panel.btnSound, ut.UIControls.MouseInteraction).clicked) {
                 if(!this.world.hasComponent(this.data.panel.btnSound, ut.Disabled)) {
                     console.log("OnEntityUpdate onclick button");
-                    UIPanelManager.hideTopPanel(this.world);
                     //game.Utl.setActive(this.world, this.data.panel.btnSound, false);
                 }
             } 
-            if (this.world.getComponentData(this.data.panel.btnShow, ut.UIControls.MouseInteraction).clicked) {
+            if (this.world.getComponentData(this.data.panel.headIcon, ut.UIControls.MouseInteraction).clicked) {
                 console.log("OnEntityUpdate onclick button 222222");
-                game.Utl.setActive(this.world, this.data.panel.btnSound, true);
+                //game.Utl.setActive(this.world, this.data.panel.btnSound, true);
                 //UIPanelManager.showTopPanel(this.world, "PanelMenu");
             }
         }

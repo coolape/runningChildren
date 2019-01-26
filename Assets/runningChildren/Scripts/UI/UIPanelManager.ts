@@ -9,8 +9,9 @@ namespace game {
             if (cfg.topPanelName == panelName) {
                 return;
             }
-            let entityes =  ut.EntityGroup.instantiate(world, panelName);
+            let entities =  ut.EntityGroup.instantiate(world, panelName);
             for(let i=0; i < entities.length; i++) {
+                console.log("====" + world.getEntityName(entities[i]));
                 if (world.hasComponent(entities[i], game.CPUIPanelBase)) {
                     let panel = world.getComponentData(entities[i], game.CPUIPanelBase);
                     let camera = world.getComponentData(panel.uicamera, ut.Core2D.Camera2D);
