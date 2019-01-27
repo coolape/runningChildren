@@ -556,6 +556,8 @@
             "sprite": { "$TypeId": 10, "Guid": "f5f33801a546a4321aa16a919f8f6bc2", "FileId": 21300006, "Type": 3 }
         }
     }, {
+        "Type": { "Id": "0efd2ae60c7796b3a911cb3247c89bd9", "Name": "MouseInteraction" }
+    }, {
         "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
         "Properties": {
             "size": {
@@ -566,7 +568,5 @@
                 }
             }
         }
-    }, {
-        "Type": { "Id": "0efd2ae60c7796b3a911cb3247c89bd9", "Name": "MouseInteraction" }
     }]
 }]

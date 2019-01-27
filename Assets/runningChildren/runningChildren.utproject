@@ -65,7 +65,8 @@
         { "Id": "60feebda86c36292119505b0bd2ac3e9", "Name": "UTiny.UIControls" },
         { "Id": "259902b84b3ed0f7213a1b5e37040709", "Name": "UTiny.Physics2D" },
         { "Id": "0b0e260844fa6632977aa15579b42291", "Name": "UTiny.Text" },
-        { "Id": "ca702d06498caa58a8babcfb0c9760ef", "Name": "UTiny.UnityTypesExtensions" }
+        { "Id": "ca702d06498caa58a8babcfb0c9760ef", "Name": "UTiny.UnityTypesExtensions" },
+        { "Id": "36f73ad23c8a63c53fa510f0621474f5", "Name": "UTiny.HitBox2D" }
     ],
     "StartupEntityGroup": { "Id": "0339bcbe176e4c9582ae557ddda46131", "Name": "NewEntityGroup" }
 },

@@ -36,6 +36,7 @@ namespace game {
 
         static loadSceneMenu(world:ut.World)
         {
+            ut.EntityGroup.instantiate(world, "game.GameScene");
             game.UIPanelManager.showTopPanel(world, "game.UIPanelMenu");
             let url = "http://localhost:8080/icon.png"
             let cb = function(code, respons, orgs) {

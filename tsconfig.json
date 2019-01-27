@@ -2,7 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "skipLibCheck": true,
-        "outFile": "/Users/chenbin/Documents/working/projects/runningChildren/TinyExport/runningChildren/html5/development/ScriptAssemblies/tsc-emit.js",
+        "outFile": "/Users/chenbin/Documents/working/u3dProjects/runningChildren/TinyExport/runningChildren/html5/development/ScriptAssemblies/tsc-emit.js",
         "sourceMap": true,
         "target": "ES5"
     },
@@ -33,7 +33,8 @@
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Text/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.TextHTML/**/*.ts",
         "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.UnityTypesExtensions/**/*.ts",
-        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Interpolation/**/*.ts"
+        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.Interpolation/**/*.ts",
+        "Library/PackageCache/com.unity.tiny@0.13.4-preview/Runtime/Modules/UTiny.HitBox2D/**/*.ts"
     ],
     "exclude": [],
     "files": [
