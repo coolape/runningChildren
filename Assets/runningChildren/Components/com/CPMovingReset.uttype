@@ -1,0 +1,28 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "99b2b04f599f4bd3b7c2cf14fc898208",
+    "Name": "CPMovingReset",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "9abdf1f139c044579a8043ae5823f81f",
+        "Name": "threshold",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "539a23e41b8a4815be4a491ab1239368",
+        "Name": "axis",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "axis": "x"
+        }
+    }
+}]
