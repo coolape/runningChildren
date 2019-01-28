@@ -18,6 +18,12 @@
         "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
         "Array": false,
         "Visibility": 0
+    }, {
+        "Id": "3731e553d3c0466c8efe2a41f027b589",
+        "Name": "distance",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
     }],
     "DefaultValue": {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },

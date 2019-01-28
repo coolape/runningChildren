@@ -113,7 +113,10 @@
     }, {
         "Type": { "Id": "288a861a8ca311346faecf4c20a2da76", "Name": "SortingGroup" }
     }, {
-        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" }
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": 2
+        }
     }]
 },
 {
@@ -165,7 +168,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": 0,
-                    "y": -4.1
+                    "y": -1
                 }
             }
         }
@@ -199,6 +202,29 @@
                     "height": 168
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -12,
+            "distance": 24
         }
     }]
 },
@@ -251,7 +277,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": -4.5,
-                    "y": -4.1
+                    "y": -1
                 }
             }
         }
@@ -285,6 +311,30 @@
                     "height": 168
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -12,
+            "axis": "x",
+            "distance": 24
         }
     }]
 },
@@ -337,7 +387,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": -9,
-                    "y": -4.1
+                    "y": -1
                 }
             }
         }
@@ -371,6 +421,30 @@
                     "height": 168
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -12,
+            "axis": "x",
+            "distance": 24
         }
     }]
 },
@@ -423,7 +497,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": 9,
-                    "y": -4.1
+                    "y": -1
                 }
             }
         }
@@ -457,6 +531,30 @@
                     "height": 168
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -12,
+            "axis": "x",
+            "distance": 24
         }
     }]
 },
@@ -509,7 +607,7 @@
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
                     "x": 4.5,
-                    "y": -4.1
+                    "y": -1
                 }
             }
         }
@@ -543,6 +641,30 @@
                     "height": 168
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -12,
+            "axis": "x",
+            "distance": 24
         }
     }]
 },
