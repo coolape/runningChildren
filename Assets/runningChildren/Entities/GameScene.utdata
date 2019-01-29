@@ -13,6 +13,7 @@
         { "$TypeId": 9, "Id": "28b6d93d8d504c2592b50d242269b14e", "Name": "ground" },
         { "$TypeId": 9, "Id": "7221cf483a4549148b17cc9a75be4a5e", "Name": "ground" },
         { "$TypeId": 9, "Id": "afa6b1f70ee84d9c98002b7b6b279068", "Name": "ground" },
+        { "$TypeId": 9, "Id": "02de11296d1244f4a37997702426b842", "Name": "ground" },
         { "$TypeId": 9, "Id": "d4bfe5e1c59d4a5b9b7524a64683adb4", "Name": "player" }
     ]
 },
@@ -115,7 +116,7 @@
     }, {
         "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
         "Properties": {
-            "order": 2
+            "order": 20
         }
     }]
 },
@@ -223,8 +224,8 @@
     }, {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "threshold": -12,
-            "distance": 24
+            "threshold": -13.5,
+            "distance": 27
         }
     }]
 },
@@ -332,9 +333,9 @@
     }, {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "threshold": -12,
+            "threshold": -13.5,
             "axis": "x",
-            "distance": 24
+            "distance": 27
         }
     }]
 },
@@ -442,9 +443,9 @@
     }, {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "threshold": -12,
+            "threshold": -13.5,
             "axis": "x",
-            "distance": 24
+            "distance": 27
         }
     }]
 },
@@ -552,9 +553,9 @@
     }, {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "threshold": -12,
+            "threshold": -13.5,
             "axis": "x",
-            "distance": 24
+            "distance": 27
         }
     }]
 },
@@ -662,9 +663,119 @@
     }, {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "threshold": -12,
+            "threshold": -13.5,
             "axis": "x",
-            "distance": 24
+            "distance": 27
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "02de11296d1244f4a37997702426b842",
+    "Name": "ground",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "18c967937cab42c998ba3375a924420a", "Name": "grounds" }
+        }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "f5f33801a546a4321aa16a919f8f6bc2", "FileId": 21300094, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" },
+        "Properties": {
+            "scale": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0.01,
+                    "y": 0.01,
+                    "z": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+        "Properties": {
+            "rotation": {
+                "Type": { "Id": "dc7e11e5d517ed01fd5d084a6c9fd64d", "Name": "Quaternion" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 13.5,
+                    "y": -1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 450,
+                    "y": 168
+                }
+            },
+            "drawMode": {
+                "$TypeId": 8,
+                "Type": { "Id": "a7ae2ef1f120627af99607cbecca330e", "Name": "DrawMode" },
+                "Id": "0334e5a91225cf998b678224025cf40c",
+                "Name": "ContinuousTiling",
+                "Value": 0
+            }
+        }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -225,
+                    "y": -84,
+                    "width": 450,
+                    "height": 168
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b951ce2e52bb40d99c66a7d4133389cd", "Name": "CPMoving" },
+        "Properties": {
+            "speed": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -1
+                }
+            },
+            "ignore": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
+        "Properties": {
+            "threshold": -13.5,
+            "axis": "x",
+            "distance": 27
         }
     }]
 },

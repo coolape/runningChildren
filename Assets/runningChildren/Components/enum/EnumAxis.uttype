@@ -1,0 +1,35 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "fe230df3d4864891bc25897b93cdee04",
+    "Name": "EnumAxis",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "f72498bf03714940915e8490e115b496",
+        "Name": "x",
+        "FieldType": { "Id": "27c155635ccb4ab2bcb79ef5aaf129ec", "Name": "Int8" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "6245453f7fc843aaa6f86c4bdf2b4fcb",
+        "Name": "y",
+        "FieldType": { "Id": "27c155635ccb4ab2bcb79ef5aaf129ec", "Name": "Int8" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "ac876c5e4ace4d2eae9ff62efe326dac",
+        "Name": "z",
+        "FieldType": { "Id": "27c155635ccb4ab2bcb79ef5aaf129ec", "Name": "Int8" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "fe230df3d4864891bc25897b93cdee04", "Name": "EnumAxis" },
+        "Properties": {
+            "y": 1,
+            "z": 2
+        }
+    }
+}]

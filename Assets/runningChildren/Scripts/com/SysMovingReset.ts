@@ -11,11 +11,11 @@ namespace game {
             {
                 let pos = transform.position;
                 if (movingReset.axis.toLowerCase() == "x") {
-                    if (pos.x >= movingReset.threshold) {
+                    if (pos.x <= movingReset.threshold) {
                         pos.x += movingReset.distance;
                     }
                 } else if (movingReset.axis.toLowerCase() == "y") {
-                    if (pos.y >= movingReset.threshold) {
+                    if (pos.y <= movingReset.threshold) {
                         pos.y += movingReset.distance;
                     }
                 } else {
