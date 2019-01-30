@@ -15,7 +15,7 @@
     }, {
         "Id": "539a23e41b8a4815be4a491ab1239368",
         "Name": "axis",
-        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "FieldType": { "Id": "31d8ae5542ee4e108d3b8d68c6722e7c", "Name": "EnumAxis" },
         "Array": false,
         "Visibility": 0
     }, {
@@ -28,7 +28,13 @@
     "DefaultValue": {
         "Type": { "Id": "99b2b04f599f4bd3b7c2cf14fc898208", "Name": "CPMovingReset" },
         "Properties": {
-            "axis": "x"
+            "axis": {
+                "$TypeId": 8,
+                "Type": { "Id": "31d8ae5542ee4e108d3b8d68c6722e7c", "Name": "EnumAxis" },
+                "Id": "5c659e0e567640d1b41dbb976a96df94",
+                "Name": "x",
+                "Value": 0
+            }
         }
     }
 }]

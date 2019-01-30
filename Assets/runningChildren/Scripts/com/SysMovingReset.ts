@@ -10,11 +10,11 @@ namespace game {
             this.world.forEach([ut.Core2D.TransformLocalPosition, game.CPMovingReset], (transform, movingReset)=>
             {
                 let pos = transform.position;
-                if (movingReset.axis.toLowerCase() == "x") {
+                if (movingReset.axis == game.EnumAxis.x) {
                     if (pos.x <= movingReset.threshold) {
                         pos.x += movingReset.distance;
                     }
-                } else if (movingReset.axis.toLowerCase() == "y") {
+                } else if (movingReset.axis  == game.EnumAxis.y) {
                     if (pos.y <= movingReset.threshold) {
                         pos.y += movingReset.distance;
                     }

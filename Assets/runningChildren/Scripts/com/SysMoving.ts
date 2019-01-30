@@ -7,12 +7,12 @@ namespace game {
     export class SysMoving extends ut.ComponentSystem {
         
         OnUpdate():void {
+            let deltaTime:number = this.scheduler.deltaTime();
             this.world.forEach([ut.Core2D.TransformLocalPosition, game.CPMoving], (transform, moving)=>
             {
                 let pos = transform.position;
-                pos.x += moving.speed.x*0.01;
-                pos.y += moving.speed.y*0.01;
-                pos.z += moving.speed.z*0.01;
+                pos.x += moving.speed.x * deltaTime;
+                pos.y += moving.speed.y * deltaTime;
                 transform.position = pos;
             });
         }

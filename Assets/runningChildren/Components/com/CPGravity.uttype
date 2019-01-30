@@ -1,0 +1,21 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "6498c62200ae4da09a25ee40437695e0",
+    "Name": "CPGravity",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "1ddf2c2749a54710baeacd6cebae57f6",
+        "Name": "gravity",
+        "FieldType": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "6498c62200ae4da09a25ee40437695e0", "Name": "CPGravity" }
+    }
+}]
